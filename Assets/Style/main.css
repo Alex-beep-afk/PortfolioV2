@@ -1,0 +1,59 @@
+/* ***********************************************main****************************************** */
+main{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+/* ***********************************************profile****************************************** */
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid var(--primary);
+    
+}
+
+.profile>img{
+    
+    width: 400px;
+}
+
+.profile-content{
+    border: 2px solid var(--secondary);
+    border-radius: var(--border-radius);
+    padding: 6%;
+
+}
+/* ***********************************************diplomes****************************************** */
+.diplomes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.diplome-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding : 2rem;
+    width: 80%;
+    gap: 20px;
+    border: 2px solid var(--primary);
+}
+.ebenisterie{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+    url("../Images/ébéniste_architectural.jpg");
+    background-size: cover;
+    
+    color: white;
+
+}
+
+h3{
+    text-align: center;
+}
