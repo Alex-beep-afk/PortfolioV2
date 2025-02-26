@@ -5,7 +5,7 @@ main{
     gap : 20px;
 }
 h2{
-    margin-top: 10px;
+    margin-bottom: 10px;
     border-bottom: 2px solid var(--primary);
 }
 
@@ -14,7 +14,9 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+}
+.profile>h2{
+    margin: 20px 0px 0px 0px;
 }
 .profile-content>h2{
     margin-bottom: 20px;
@@ -22,18 +24,28 @@ h2{
 }
 .About-me{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
-.About-me>img{
-    
+.competences-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.competences-list>h2{
+    margin-top: 10px;
+    border-bottom: 2px solid var(--primary);
+}
+.profile-content>img{ 
     width: 400px;
 }
 
 .profile-content{
-    border: 2px solid var(--secondary);
+    display: flex;
     border-radius: var(--border-radius);
-    padding: 6%;
+    padding: 5%;
 }
 /*? ***********************************************diplomes****************************************** */
 .diplomes{
@@ -53,12 +65,12 @@ h2{
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: whitesmoke;
     border-radius: 20px;
-    padding : 1rem;
+    padding : 0.5rem;
     margin: auto;
-    width: 80%;
+    width: 100%;
     border: 2px solid var(--primary);
+    text-align: center;
 }
 h3{
     text-align: center;
@@ -94,7 +106,45 @@ h3{
     color: white;
 }
 /*? *********************************************Experiences***************************************/
+.Experiences{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Experiences-content{
+    display: flex;
+    gap: 20px;
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid var(--secondary); */
+    border-radius: var(--border-radius);
+    padding: 6%;
+    width: 33%;
+}
 
+.experiences-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+ul li{
+    background-image: url(../Images/icons8-losange-48.png);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+/*? *********************************************Stack***********************************************/
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 /*? ***********************************************Contact*****************************************/
 form{
     padding: 2rem;
@@ -109,12 +159,21 @@ form{
 input , textarea{
     width: 80%;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: var(--border-radius)
 }
 .btn{
     background-color: var(--primary);
     border: transparent;
     color: aliceblue ;
+    border-radius: var(--border-radius);
+    padding: 5px;
 
 }
-
+/*? ************************************************Footer**********************************************/
+footer{
+    background-color: var(--primary);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

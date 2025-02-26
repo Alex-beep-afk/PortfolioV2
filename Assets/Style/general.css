@@ -42,3 +42,8 @@ body {
     width: 400px;
     height: 400px;
   }
+  button{
+    background-color: var(--primary);
+    border: transparent;
+    cursor: pointer;
+  }
