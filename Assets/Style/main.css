@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
 /*? ***********************************************main****************************************** */
 main{
     display: flex;
@@ -8,23 +10,40 @@ h2{
     margin-bottom: 10px;
     border-bottom: 2px solid var(--primary);
 }
-/*? ***********************************************Navbar****************************************** */
-.banner-content{
-    background-image:url(../Images/Banner.jpg); ;
-    height : 50vh;
-    background-position: center;
-    background-size: cover;
+/*? ***********************************************Banner****************************************** */
 
+
+svg {
+	font-family: "Bubblegum Sans", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 7s infinite alternate;
+	stroke-width: 2;
+	stroke: #0AE3EB;
+	font-size: 115px;
+}
+
+
+.wrapper {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(1, 245, 237, 0.527);
+}
+.banner-content{
+    height: 20vh;
+    
 }
 
 /*? ***********************************************profile****************************************** */
 .profile{
+    
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .profile>h2{
     margin: 20px 0px 0px 0px;
+    
 }
 .profile-content>h2{
     margin-bottom: 20px;
@@ -178,6 +197,8 @@ form{
 input , textarea{
     padding: 5px;
     border-radius: var(--border-radius);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary);
     width:80%;
 }
 .contact-content{
@@ -189,7 +210,59 @@ input , textarea{
     padding: 10px;
     border-radius: 5px;
 }
-/*? ************************************************Footer**********************************************/
+.contact-content>img{
+    width: 30%;
+    border-radius: var(--border-radius);
+}
+.contact{
+    padding : 2rem;
+}
+/*? ***********************************************Glitch-Wrapper*******************************************/
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: #0AE3EB 0px 0px 10px;
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 100px;
+    font-weight: bold;
+    color: #11F1FF;
+    letter-spacing: 3px;
+    z-index: 1;
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+ }
+ 
+
+
+/*? ************************************************Footer**************************************************/
 footer{
     background-color: var(--primary);
     height: 10vh;
