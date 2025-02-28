@@ -178,10 +178,13 @@ ul li{
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    
 }
 .technologies-content>img{
     width: 10rem;
+    animation: levitate 2s ease-in-out 0s infinite normal none;
 }
+
 
 /*? ***********************************************Contact*****************************************/
 form{

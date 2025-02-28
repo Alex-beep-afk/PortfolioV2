@@ -1,6 +1,6 @@
 
         // Séquence de touches souhaitée (par exemple, "abc")
-        const sequence = ['a', 'b', 'c'];
+        const sequence = ['s','a','n','t','i'];
         let currentSequence = [];
 
         // Écouter les événements de touches
@@ -11,7 +11,7 @@
             // Vérifier si la séquence actuelle correspond à la séquence souhaitée
             if (currentSequence.join('').includes(sequence.join(''))) {
                 // Rediriger l'utilisateur vers une autre page
-                window.location.href = 'https://www.example.com';
+                window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
             }
 
             // Limiter la longueur de la séquence actuelle pour éviter les dépassements
