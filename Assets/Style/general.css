@@ -101,11 +101,15 @@ body {
 .container {
     width: 90%;
     margin: auto;
+   
 }
-.swiper {
-    width: 400px;
-    height: 400px;
-  }
+/* ? ***********************Swiper************************  */
+.swiper{
+    width: 100%;
+    
+    
+}
+/*? ***********************Boutons************************  */
 .btn{
     background-color: var(--primary);
     border: transparent;
@@ -114,10 +118,10 @@ body {
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
 }
-button:hover{
+.btn:hover{
     background-color: var(--info);
 }
-button:active{
+.btn:active{
     background-color: var(--success);
 }
 /*? ***********************Aspects des cartes************************  */
@@ -130,11 +134,13 @@ button:active{
 }
 .card:hover{
     box-shadow: 0px 0px 20px rgba(4, 235, 227, 0.5);
+    transform: scale(0.9);
+    transition: all 0.5s ease-in-out;
 }
 /*? ***********************Scrollbar************************  */
 
 
-/* Personnaliser la scrollbar */
+ /* Personnaliser la scrollbar */
 ::-webkit-scrollbar {
     width: 10px; 
 }
@@ -150,5 +156,5 @@ button:active{
 ::-webkit-scrollbar-track {
     background-color:#0ae3eb; 
     
-}
+} 
 

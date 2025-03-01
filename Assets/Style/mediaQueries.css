@@ -1,0 +1,79 @@
+@media only screen and (min-width: 320px ) and (max-width: 1024px) {
+    /* ? ********general******** */
+    .card{
+        width: 100%;
+    }
+    /*? ********header******** */
+    .navbar-burger{
+        display: block;
+    }
+    .navbar-list{
+        flex-direction: column;
+        background-color: var(--primary);
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        justify-content: space-evenly;
+        width:100%;
+        height: 40vh;
+        border-radius: 0px 0px 20px 20px;
+        padding: 3em;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s ease-in;
+        
+    }
+    .navbar-list>li{
+        width: 100%;
+        text-align: center;
+        background-size: 25px;
+        border-bottom: 1px solid #0AE3EB;
+        
+    }
+    .navbar-list.open{
+        transform: scaleY(1);
+    }
+    .navbar-list>li>a{
+        font-size: 2rem;
+    }
+    /*? ********banner******** */
+    svg text{
+        font-size: 4rem;
+    }
+    /*? ********profile******** */
+    .profile{
+        align-items: center;
+    }
+    .profile-content{
+        flex-direction: column;
+        gap: 20px;
+        width : 80%;
+    }
+    /*? ********diplomes******** */
+    .diplome-content{
+        width: 25em;
+    }
+    /*? ********Experiences********  */
+    .Experiences-content{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+   /*? ********glitch-wrapper********  */
+   .glitch-wrapper{
+    display: none;
+   }
+   /*? ********contact********  */
+   .contact-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+   form{
+    width: 100%;
+   }
+   input , textarea{
+    width: 80%;
+   }
+}

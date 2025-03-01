@@ -11,11 +11,57 @@ header{
     display:flex;
     align-items: center;
    justify-content: space-between;
-    
-
 }
 ul{
     display: flex;
     align-items: flex-end;
     gap : 20px;
+}
+/*? ******************Burger****************  */
+.navbar-burger{
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.navbar-burger-bar,
+.navbar-burger-bar::before,
+.navbar-burger-bar::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 1.8rem;
+    height: 3px;
+    background: whitesmoke;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease-in;
+}
+.navbar-burger-bar::before {
+    position: absolute;
+    top: -0.5rem;
+}
+.navbar-burger-bar::after {
+    position: absolute;
+    top: 0.5rem;
+}
+.navbar-burger.open .navbar-burger-bar {
+    background: transparent;
+}
+
+.navbar-burger.open .navbar-burger-bar::after,
+.navbar-burger.open .navbar-burger-bar::before {
+    top: 0;
+}
+
+.navbar-burger.open .navbar-burger-bar::after {
+    transform: rotate(45deg);
+}
+
+.navbar-burger.open .navbar-burger-bar::before {
+    transform: rotate(-45deg);
+}
+/*? ******************Titre****************  */
+h1{ 
+    font-size: 3rem;
+    color: white;
 }

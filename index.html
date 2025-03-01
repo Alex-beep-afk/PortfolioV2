@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="Assets/Style/general.css">
     <link rel="stylesheet" href="Assets/Style/header.css">
     <link rel="stylesheet" href="Assets/Style/main.css">
+    <link rel="stylesheet" href="Assets/Style/mediaQueries.css">
     <script src="Assets/Scripts/konamiCode.js"defer></script>
     <script src="Assets/Scripts/slider.js" defer></script>
     <script src="Assets/Scripts/form.js" defer></script>
+    <script src ="Assets/Scripts/menu burger.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Portfolio</title>
@@ -19,12 +21,15 @@
     <header class="navbar">
         <nav class="navbar-content container">
             <h1>Portfolio</h1>
-            <ul>
+            <ul class="navbar-list">
                 <li><a href="">Diplomes</a></li>
                 <li><a href="">Experiences</a></li>
                 <li><a href="">Technologies</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <button class = "navbar-burger">
+                <span class="navbar-burger-bar"></span>
+            </button>
         </nav>
     </header>
     <main>
@@ -206,13 +211,13 @@
             </div>
         </section>
 
-
-
-    </main>
     <div class="glitch-wrapper">
         <div class="glitch" data-text="Try the konami code">Try the konami code</div>
-     </div>
-    <footer></footer>
+    </div>
+<footer></footer>
+    </main>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
