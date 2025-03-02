@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="Assets/Style/header.css">
     <link rel="stylesheet" href="Assets/Style/main.css">
     <link rel="stylesheet" href="Assets/Style/mediaQueries.css">
+    <link rel="stylesheet" href="Assets/Style/darkmode.css">
     <script src="Assets/Scripts/konamiCode.js"defer></script>
     <script src="Assets/Scripts/slider.js" defer></script>
     <script src="Assets/Scripts/form.js" defer></script>
     <script src ="Assets/Scripts/menu burger.js" defer></script>
+    <script src="Assets/Scripts/darkmode.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Portfolio</title>
@@ -22,10 +24,10 @@
         <nav class="navbar-content container">
             <h1>Portfolio</h1>
             <ul class="navbar-list">
-                <li><a href="">Diplomes</a></li>
-                <li><a href="">Experiences</a></li>
-                <li><a href="">Technologies</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#diplomes">Diplomes</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <button class = "navbar-burger">
                 <span class="navbar-burger-bar"></span>
@@ -69,18 +71,19 @@
             </article>
         </section>
         <section class="technologies container">
-            <h2>Technologies</h2>
+            <h2 id = "technologies">Technologies</h2>
             <div class="technologies-content">
-                <img class="card" src="Assets/Images/icons8-html-240.png" alt="">
-                <img class="card" src="Assets/Images/icons8-css-240.png" alt="">
-                <img class="card" src="Assets/Images/icons8-javascript-250.png" alt="">
-                <img class="card" src="Assets/Images/icons8-php-96.png" alt="">
-                <img class="card" src="Assets/Images/icons8-symfony-256.png" alt="">
+                <img class="card" src="Assets/Images/icons8-html-240.png" alt="html">
+                <img class="card" src="Assets/Images/icons8-css-240.png" alt="css">
+                <img class="card" src="Assets/Images/icons8-javascript-250.png" alt="js">
+                <img class="card" src="Assets/Images/icons8-php-96.png" alt="php">
+                <img class="card" src="Assets/Images/icons8-symfony-256.png" alt="symphony">
+                <img class ="card" src="Assets/Images/icons8-git-240.png" alt="git">
             </div>
 
         </section>
         <section class="diplomes container">
-            <h2>Diplomes</h2>
+            <h2 id="diplomes">Diplomes</h2>
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -144,7 +147,7 @@
             </div>
         </section>
         <section class="Experiences container">
-            <h2>Experiences</h2>
+            <h2 id = "experiences">Experiences</h2>
             <div class="Experiences-content">
                 <article class="experience card">
                     <h3>Superviseur reseau</h3>
@@ -196,7 +199,7 @@
         </section>
 
         <section class="contact container">
-            <h2>Contact</h2>
+            <h2 id = "contact">Contact</h2>
             <div class="contact-content">
                 <form method="POST" id="form">
                     <input type="hidden" name="access_key" value="6579f98e-649e-4cf0-848d-0395ecf471cf">
@@ -207,14 +210,21 @@
                     <button class="btn" type="submit">Submit Form</button>
                     <div id="result"></div>
                 </form>
-                <img src="Assets/Images/qrcode_github.com (1).png" alt="">
+                <div class="cv_download">
+                <a href="https://github.com/Alex-beep-afk"><img src="Assets/Images/qrcode_github.com (1).png" alt="comptegithub"></a>
+                <a class ="btn" href="Assets/Files/Alexandre Prigent.pdf" download="Alexandre Prigent.pdf">Telecharger mon CV</a>
+                </div>
+                
             </div>
         </section>
 
     <div class="glitch-wrapper">
         <div class="glitch" data-text="Try the konami code">Try the konami code</div>
     </div>
-<footer></footer>
+<footer>
+    <button class="btn-darkmode btn">Darkmode</button>
+    <a href="">© 2025 Alexandre Prigent</a>
+</footer>
     </main>
     
     

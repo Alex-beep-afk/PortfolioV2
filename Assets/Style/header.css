@@ -17,6 +17,9 @@ ul{
     align-items: flex-end;
     gap : 20px;
 }
+.navbar-list{
+    color: white;
+}
 /*? ******************Burger****************  */
 .navbar-burger{
     display: none;

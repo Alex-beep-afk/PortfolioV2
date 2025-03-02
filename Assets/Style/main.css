@@ -14,7 +14,7 @@ h2{
 
 
 svg {
-	font-family: "Bubblegum Sans", sans-serif;
+	font-family: var(--font-family);
 	width: 100%; 
     height: 100%;
 }
@@ -180,6 +180,7 @@ ul li{
 
 
 /*? ***********************************************Contact*****************************************/
+/* formSide */
 form{
     padding: 2rem;
     margin-top: 1.5rem;
@@ -201,15 +202,51 @@ input , textarea{
     display: flex;
     justify-content: space-between;
 }
+form>button{
+    font-family: var(--font-family);
+}
 .success{
     background-color: var(--primary);
     padding: 10px;
     border-radius: 5px;
 }
-.contact-content>img{
-    width: 30%;
-    border-radius: var(--border-radius);
+/* downloadSide */
+/* compte github */
+
+.cv_download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+.cv_download>a:nth-child(1){
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 60%;
+    
+}
+.cv_download>a:nth-child(1):hover{
+    background-color: var(--info);
+}
+/* Lien de téléchargement */
+.cv_download>a:nth-child(2){
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.cv_download>a:nth-child(2):hover{
+    background-color: var(--info);
+}
+
 .contact{
     padding : 2rem;
 }
@@ -264,5 +301,10 @@ footer{
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
+footer>.btn-darkmode{
+    background-color: var(--secondary);
+    
+}
+
