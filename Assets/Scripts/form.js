@@ -28,7 +28,7 @@ form.addEventListener('submit', async function (e) {
         
         // Je traite la reponse en fonction de son statut "200 => success"
         if (response.status == 200) {
-            result.innerHTML = "Form submitted successfully";
+            result.innerHTML = "Merci pour votre message!";
             result.classList.add('success');
         } else {
             result.innerHTML = data.message;
