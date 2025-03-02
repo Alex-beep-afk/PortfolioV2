@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 :root {
     --primary: #0ae3eb;
     --secondary: grey;
@@ -6,8 +7,9 @@
     --warning: #ffc107;
     --error: #dc3545;
     --border-radius: 5px;
-    --font-family: "Lucida Handwriting", sans-serif;
+    --font-family: "Bubblegum Sans", cursive;
 }
+/* ***********************Animations************************  */
 @keyframes stroke {
 	0%   {
 		fill: rgba(10,227,235,0); stroke: rgba(10,227,235,1);
@@ -40,22 +42,6 @@
        transform: translate(0);
     }
  }
-
-
-
-@keyframes heartbeat{
-  0% {
-	transform: scale(1);
-  }
-
-  50% {
-	transform: scale(1.1);
-  }
-
-  100% {
-	transform: scale(1);
-  }
-}
 @keyframes levitate{
     0%{
         transform: translateY(0);
@@ -83,22 +69,26 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+a:hover{
+    color: var(--info);
+}
 ul,
 ol {
     list-style: none;
 }
 
+
+
+/********************************** UTILS **********************************/
 body {
     font-family: var(--font-family);
+    font-size: 25px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgb(248, 246, 246)), url("../Images/Background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
    
 }
-
-/********************************** UTILS **********************************/
 .container {
     width: 90%;
     margin: auto;
