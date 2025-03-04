@@ -182,9 +182,11 @@ ul li{
 /*? ***********************************************Contact*****************************************/
 /* formSide */
 form{
-    padding: 2rem;
+    background-color: var(--primary-transparent);
+    padding-top: 4rem;
     margin-top: 1.5rem;
     width:50%;
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,7 +194,7 @@ form{
     gap : 50px;
 }
 input , textarea{
-    padding: 5px;
+    padding: 1em;
     border-radius: var(--border-radius);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--primary);
@@ -204,6 +206,7 @@ input , textarea{
 }
 form>button{
     font-family: var(--font-family);
+    
 }
 .success{
     background-color: var(--primary);
@@ -237,8 +240,7 @@ form>button{
 }
 /* Lien de téléchargement */
 .cv_download>a:nth-child(2){
-    background-color: var(--primary);
-    border-radius: var(--border-radius);
+    background-color: var(--primary-transparent);
     text-decoration: none;
     color: white;
     text-align: center;
